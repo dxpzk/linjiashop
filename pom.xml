@@ -8,6 +8,9 @@
     <artifactId>linjiashop</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
+    <name>linjiashop</name>
+
+
     <modules>
         <module>linjiashop-core</module>
         <module>linjiashop-generator</module>
@@ -30,7 +33,7 @@
         <file_encoding>UTF-8</file_encoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!--driver libs-->
-        <mysql.connector.java.version>5.1.45</mysql.connector.java.version>
+        <mysql.connector.java.version>8.0.15</mysql.connector.java.version>
         <!--auth libs-->
         <spring.security.jwt.version>1.0.9.RELEASE</spring.security.jwt.version>
         <spring.security.oauth2.version>2.2.0.RELEASE</spring.security.oauth2.version>
@@ -325,22 +328,62 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
+
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.1</version>-->
+<!--                <configuration>-->
+<!--                    <source>1.8</source>-->
+<!--                    <target>1.8</target>-->
+<!--                    <skip>true</skip>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>2.22.2</version>-->
+<!--                <configuration>-->
+<!--                    <skip>true</skip>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--&lt;!&ndash;            <plugin>&ndash;&gt;-->
+<!--&lt;!&ndash;                <groupId>org.springframework.boot</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <artifactId>spring-boot-maven-plugin</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <version>2.1.5.RELEASE</version>&ndash;&gt;-->
+<!--&lt;!&ndash;                <configuration>&lt;!&ndash; 指定该Main Class为全局的唯一入口 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    <mainClass>cn.enilu.flash.api.AdminApiApplication</mainClass>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <layout>JAR</layout>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <source>1.8</source>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <target>1.8</target>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <skip>true</skip>&ndash;&gt;-->
+<!--&lt;!&ndash;                </configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;                <executions>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <execution>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <goals>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <goal>repackage</goal>&lt;!&ndash;可以把依赖的包都打包到生成的Jar包中&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        </goals>&ndash;&gt;-->
+<!--&lt;!&ndash;                        &lt;!&ndash;可以生成不含依赖包的不可执行Jar包&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        &lt;!&ndash; configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;                          <classifier>exec</classifier>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </configuration> &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    </execution>&ndash;&gt;-->
+<!--&lt;!&ndash;                </executions>&ndash;&gt;-->
+<!--&lt;!&ndash;            </plugin>&ndash;&gt;-->
+<!--        </plugins>-->
+<!--    </build>-->
 </project>

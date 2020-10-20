@@ -8,8 +8,14 @@
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
 
     <artifactId>linjiashop-core</artifactId>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -152,4 +158,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 </project>

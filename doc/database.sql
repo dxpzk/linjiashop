@@ -668,7 +668,7 @@ CREATE TABLE `t_sys_cfg` (
 -- Records of t_sys_cfg
 -- ----------------------------
 INSERT INTO `t_sys_cfg` VALUES ('1', '1', '2020-01-01 17:06:43', '1', '2020-01-19 18:36:04', '应用名称', 'system.app.name', 'linjiashop');
-INSERT INTO `t_sys_cfg` VALUES ('2', '1', '2020-01-01 17:06:43', '1', '2019-11-13 16:05:21', '系统默认上传文件路径', 'system.file.upload.path', '/data/linjiashop/runtime/upload');
+INSERT INTO `t_sys_cfg` VALUES ('2', '1', '2020-01-01 17:06:43', '1', '2019-11-13 16:05:21', '系统默认上传文件路径', 'system.file.upload.path', '/Users/zhangkai/dxpzk/vue/linjiashop/upload');
 INSERT INTO `t_sys_cfg` VALUES ('3', '1', '2020-01-01 17:06:43', '1', '2019-04-15 21:36:17', '腾讯sms接口appid', 'api.tencent.sms.appid', '需要去申请咯');
 INSERT INTO `t_sys_cfg` VALUES ('4', '1', '2020-01-01 17:06:43', '1', '2019-04-15 21:36:17', '腾讯sms接口appkey', 'api.tencent.sms.appkey', '需要去申请咯');
 INSERT INTO `t_sys_cfg` VALUES ('5', '1', '2020-01-01 17:06:43', '1', '2019-04-15 21:36:17', '腾讯sms接口签名参数', 'api.tencent.sms.sign', '需要去申请咯');

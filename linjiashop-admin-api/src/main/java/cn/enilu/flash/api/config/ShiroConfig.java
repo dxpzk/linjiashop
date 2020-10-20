@@ -55,13 +55,18 @@ public class ShiroConfig {
         factoryBean.setFilters(filterMap);
 
         factoryBean.setSecurityManager(securityManager);
-        factoryBean.setUnauthorizedUrl("/401");
+        factoryBean.setUnauthorizedUrl("/");
         filterMap.put("logout", new SystemLogoutFilter());
 
         Map<String, String> filterRuleMap =  new LinkedHashMap<String,String>();
         filterRuleMap.put("/account/**","anon");
 
         //swagger资源不拦截
+        filterRuleMap.put("/","anon");
+        filterRuleMap.put("/static/**","anon");
+        filterRuleMap.put("/static/**/**","anon");
+        filterRuleMap.put("/static/**/**/**","anon");
+        filterRuleMap.put("/static/**/**/**/**","anon");
         filterRuleMap.put("/swagger-ui.html","anon");
         filterRuleMap.put("/v2/api-docs/**", "anon");
         filterRuleMap.put("/webjars/**", "anon");

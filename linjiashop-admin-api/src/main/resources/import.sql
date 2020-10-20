@@ -206,7 +206,7 @@ INSERT INTO `t_shop_user` (`id`, `avatar`, `create_time`, `gender`, `last_login_
 -- Records of t_sys_cfg.sql
 -- ----------------------------
 INSERT INTO `t_sys_cfg` (`id`, `create_by`, `create_time`, `modify_by`, `modify_time`, `cfg_desc`, `cfg_name`, `cfg_value`) VALUES (1, 1, '2020-1-1 17:06:43', 1, '2020-1-19 18:36:04', '应用名称', 'system.app.name', 'linjiashop');
-INSERT INTO `t_sys_cfg` (`id`, `create_by`, `create_time`, `modify_by`, `modify_time`, `cfg_desc`, `cfg_name`, `cfg_value`) VALUES (2, 1, '2020-1-1 17:06:43', 1, '2019-11-13 16:05:21', '系统默认上传文件路径', 'system.file.upload.path', '/data/linjiashop/runtime/upload');
+INSERT INTO `t_sys_cfg` (`id`, `create_by`, `create_time`, `modify_by`, `modify_time`, `cfg_desc`, `cfg_name`, `cfg_value`) VALUES (2, 1, '2020-1-1 17:06:43', 1, '2019-11-13 16:05:21', '系统默认上传文件路径', 'system.file.upload.path', '/Users/zhangkai/dxpzk/vue/linjiashop/upload');
 INSERT INTO `t_sys_cfg` (`id`, `create_by`, `create_time`, `modify_by`, `modify_time`, `cfg_desc`, `cfg_name`, `cfg_value`) VALUES (3, 1, '2020-1-1 17:06:43', 1, '2019-4-15 21:36:17', '腾讯sms接口appid', 'api.tencent.sms.appid', '需要去申请咯');
 INSERT INTO `t_sys_cfg` (`id`, `create_by`, `create_time`, `modify_by`, `modify_time`, `cfg_desc`, `cfg_name`, `cfg_value`) VALUES (4, 1, '2020-1-1 17:06:43', 1, '2019-4-15 21:36:17', '腾讯sms接口appkey', 'api.tencent.sms.appkey', '需要去申请咯');
 INSERT INTO `t_sys_cfg` (`id`, `create_by`, `create_time`, `modify_by`, `modify_time`, `cfg_desc`, `cfg_name`, `cfg_value`) VALUES (5, 1, '2020-1-1 17:06:43', 1, '2019-4-15 21:36:17', '腾讯sms接口签名参数', 'api.tencent.sms.sign', '需要去申请咯');
